@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.innerwheelclub">
+
+    <uses-sdk tools:overrideLibrary="com.google.firebase.iid" />
+
+    <meta-data
+        android:name="firebase_analytics_collection_enabled"
+        android:value="true" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iw"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Volunteering"></activity>
+        <activity android:name=".volunteers" />
+        <activity android:name=".recycler_member" />
+        <activity android:name=".contact_us" />
+        <activity android:name=".change_password" />
+        <activity android:name=".recyclerview" />
+        <activity android:name=".cards" />
+        <activity android:name=".view_profile" />
+        <activity android:name=".home" />
+        <activity android:name=".new_user" />
+        <activity android:name=".login" />
+        <activity android:name=".user_home" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

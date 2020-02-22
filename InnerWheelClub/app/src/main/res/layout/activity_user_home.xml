@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user_home"
+    android:background="@drawable/background_gradiient">
+
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USERNAME and details"
+                    android:textSize="30dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#004a6f"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+      <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+          android:layout_marginTop="90dp"
+          >
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:onClick="event"
+                android:background="#BA009688"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View projects"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:onClick="members"
+                android:background="#AD009688">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View members"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="60dp"
+                  android:onClick="volunteer"
+                  android:background="#83FFEB3B">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Volunteering Events"
+                      android:textSize="20dp"
+                      android:textColor="#ffffff"/>
+              </LinearLayout>
+              <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="change"
+            android:background="#83FFEB3B">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:textSize="20dp"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#8FFFC107">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View profile"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:onClick="profile"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:onClick="contact"
+                android:background="#AEFFC107">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call Support"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+
+              <Button
+                  android:id="@+id/logout_btn"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="150dp"
+                  android:layout_marginTop="70dp"
+                  android:backgroundTint="#BA009688"
+                  android:text="logout"
+                  android:textColor="@android:color/white"
+                  android:onClick="logout_intent"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

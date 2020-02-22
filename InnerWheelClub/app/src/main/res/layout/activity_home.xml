@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradiient"
+    android:orientation="vertical"
+    tools:context=".home">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+
+        android:layout_height="300dp"
+     android:layout_marginTop="20dp"
+         />
+
+    <LinearLayout
+        android:id="@+id/slidershots"
+        android:layout_below="@id/view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slidershots"
+        android:background="#BA009688"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Upcoming events"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="italic|bold"
+            android:onClick="events"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/events"
+        android:background="#BF00BCD4"
+        android:onClick="new_page"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Join Us"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/join"
+        android:background="#A1FFC107"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Contact Us"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="italic|bold"
+            android:onClick="contct"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/member"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/contact"
+        android:onClick="login_page"
+        android:background="#B0FFEB65"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Member"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

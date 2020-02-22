@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cloth_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".cards">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:textColor="#123456"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Venue"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textColor="#006520"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textColor="#006520"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textColor="#006520"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/volunteer"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:onClick="tovolunteer"
+        android:text="Volunteer"
+        />
+</LinearLayout>
